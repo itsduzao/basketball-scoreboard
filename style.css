@@ -1,15 +1,18 @@
 @font-face {
-    font-family: "CursedTimer";
-    src: url("assets/fonts/CursedTimer.ttf") format("truetype");
-  }
+  font-family: "CursedTimer";
+  src: url("assets/fonts/CursedTimer.ttf") format("truetype");
+}
 
 :root {
   --background-primary-color: #1B244A;
-  
+
   --ff-primary: 'CursedTimer', sans-serif;
   --ff-secondary: 'Verdana', sans-serif;
 
   --fc-panel-title: #EEEEEE;
+  --fc-display-score: #F94F6D;
+
+  --bg-display: #080001;
 }
 
 body {
@@ -25,7 +28,7 @@ body {
   margin: 0 auto;
 
   background-color: var(--background-primary-color);
-  
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -40,8 +43,34 @@ body {
   font-size: calc((40/16) * 1rem);
   line-height: calc((36/16) * 1rem);
   color: var(--fc-panel-title);
+  text-align: center;
 
   margin-bottom: 20px;
+}
+
+.display-wrapper {
+  width: 155px;
+  height: 120px;
+  border-radius: 5px 0px 0px 0px;
+
+  background-color: var(--bg-display);
+
+  text-align: center;
+
+  margin-bottom: 16px;
+}
+
+.display-field {
+  font-family: var(--ff-primary);
+  font-size: calc((90/16) * 1rem);
+  line-height: calc((126.67/16) * 1rem);
+  font-weight: 400;
+  text-align: center;
+  color: var(--fc-display-score);
+}
+
+.panel-guest {
+  border: 1px dotted white;
 }
 
 #title-guest {
@@ -50,9 +79,7 @@ body {
   line-height: calc((36/16) * 1rem);
   color: var(--fc-panel-title);
 
-  margin-bottom: 20px;
-}
+  text-align: center;
 
-.panel-guest {
-  border: 1px dotted white;
+  margin-bottom: 20px;
 }
