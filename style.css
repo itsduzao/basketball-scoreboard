@@ -16,6 +16,8 @@
   --btn-font: #9AABD8;
 
   --bg-display: #080001;
+
+  --panel-border: #EEEEEE;
 }
 
 body {
@@ -35,6 +37,8 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+
+  border: 10px solid var(--panel-border)
 }
 
 .panel {
