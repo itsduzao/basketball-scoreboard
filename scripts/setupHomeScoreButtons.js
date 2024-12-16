@@ -1,5 +1,5 @@
-import { addPoints } from './addPoints.js';
-import { updateScore } from './updateScore.js';
+import { addPoints } from './utils/addPoints.js';
+import { updateScore } from './utils/updateScore.js';
 
 let homeScoreCounter = 0;
 

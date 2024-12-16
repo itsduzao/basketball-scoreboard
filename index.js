@@ -1,5 +1,5 @@
-import { setupHomeScoreButtons } from './setupHomeScoreButtons.js';
-import { setupGuestScoreButtons } from './setupGuestScoreButtons.js';
+import { setupHomeScoreButtons } from './scripts/setupHomeScoreButtons.js';
+import { setupGuestScoreButtons } from './scripts/setupGuestScoreButtons.js';
 
 setupHomeScoreButtons()
 setupGuestScoreButtons()
